@@ -1,0 +1,22 @@
+.Titulin {
+color:#9c4437
+}
+
+.cajas {
+border-right: 40px solid #9c4437
+}
+
+.eltitulodeltitulo{
+border-bottom: 1px solid #9c4437
+}
+
+.resultado {
+color: #9c4437
+}
+
+.personajeimg img {
+width: 35%;
+}
+nav a:hover {
+color: #9c4437
+}

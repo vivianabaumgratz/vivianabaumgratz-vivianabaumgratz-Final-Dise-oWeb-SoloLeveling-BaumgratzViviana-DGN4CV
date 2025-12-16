@@ -1,0 +1,432 @@
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(90deg, #200019, #2c0010);
+    color: white;
+    font-family: "Raleway", sans-serif;
+}
+
+/* - header - */
+header {
+background: linear-gradient(to right, #1d0031, #993e02); 
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px 40px;
+}
+
+header img {
+width: 6rem; /* no estoy segura si la menra correcta es hacerlo con rem o hay otra opcion mas viable */
+}
+
+nav a {
+color: white;
+font-size: 1.5rem;
+font-family: "Bebas Neue"; /* ¿ponerlo asi no me traera problemas a futuro? */
+margin-left: 60px;
+text-decoration: none;
+transition: color 0.4s;
+}
+
+nav a:hover {
+color: #ff6600;
+}
+
+.portada {
+    width: 100%;
+}
+
+.portada img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+/* - personaje principal, ponele - */
+.personaje {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 40px 200px;
+}
+
+/* - vamoooooooooooooooooo lpm - */
+.img-personaje {
+    width:30%;
+    filter: drop-shadow(10px 15px 20px rgba(3, 95, 131, 0.5));
+}
+
+.texto {
+    max-width: 800px;
+}
+
+h1 {
+    font-family: "Bebas Neue";
+    font-size: 6rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-family: "Bebas Neue";
+    font-size: 4rem;
+    margin-bottom: 10px;
+    color: #ff6600;
+}
+
+h3 {
+    font-family: "Bebas Neue";
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #ff6600;
+}
+/* - aca se que estoy aplicando mal la tipografia pero no se como resolver - */
+p{
+    font-family: "raleway", sans-serif;
+    font-style: normal;
+    font-weight: light;
+    margin-top:20px ;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+span {
+    font-family: "Bebas Neue";
+    font-size: 2rem;
+    color: #eb50ff;
+}
+
+/* - botones - */
+button {
+    background: linear-gradient(90deg, #ff2bae, #28003f);
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 40px;
+    transition: opacity 0.3s;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* - personajes - */
+/* aqui vamos por decima novena vez, cansada jefe */
+.personajes {
+    background: url(https://lh3.googleusercontent.com/pw/AP1GczOb61faHGoknufIc1Y38stxuArEc6M9Jd8mgw2M1QA_X9XeEWo14KyqJvw8dXNR9cEaAriivh5E7Jf9Ytdtx6zCiCaG7y7-GY1_MKyVlOpHKeY8vAg7LVd4ZwM6QVwYl-jlN6e22WjY9nLB6Xc84Ean=w1064-h564-s-no-gm?authuser=0);
+    padding: 40px 200px 40px 200px;
+    text-align: left; 
+    color:  white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.personajes h2 {
+  color: #ff6600;
+  font-weight: 900;
+  margin-bottom: 20px;
+  line-height: 1.1;
+}
+
+.personajes p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+/* 5 columnas shit*/
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 25px;
+  justify-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+/* Cada personaje */
+.galeria div {
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.galeria div:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px 5px rgba(0, 247, 255, 0.6);
+}
+
+/* Imagen de cada personaje */
+.galeria img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+
+/* sección principal */
+.youtube-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 80px 200px;
+  width: 100%;
+  min-height: 500px;
+  overflow: hidden;
+}
+
+/* fondo animado */
+.video-background {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.video-background iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 56.25vw;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+/* playlist encima */
+.playlist {
+  position: relative;
+  z-index: 2;
+}
+
+/* Rangos*/
+.rangoscazadores {
+  background: url("https://lh3.googleusercontent.com/pw/AP1GczOdvxn1xxMUXug-QWsNGXXSKsaPaSfpbNCiTawNgJKo2obsJ_4vfDLk7AI9dVmPKXItdaM6Qe65BBlgD__2X7DaDXGcxHy3rUNnd0iJt9GwAlrshQhtpCwcDcLYmqp4ws7Y2SZvBGoyKDItGXMioi1i=w1064-h213-s-no-gm?authuser=0") no-repeat right center;
+  background-size: cover;
+  background-position: right center;
+  display: flex;
+  align-items: center;
+  padding: 80px 200px 80px 200px;
+  color: #33072a;
+}
+
+.rangoscazadores .contenido {
+  position: relative;
+  max-width: 600px;
+}
+
+.rangoscazadores h2 {
+  font-size: 4rem;
+  font-weight: 900;
+  color: #5b0a2e;
+  margin-bottom: 20px;
+  line-height: 1.1;
+}
+
+.rangoscazadores p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #6b1c5a;
+}
+
+/* Rangos botones chek*/
+.rangosbotones {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px 0;
+}
+
+.boton {
+  text-decoration: none;
+  font-family: Raleway;
+  color: white;
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding: 12px 80px;
+  border-radius: 50px;
+  background: linear-gradient(90deg, #8d0a5b, #28003f);
+  background-size: 200% 100%;
+  transition: all 0.4s ease;
+}
+
+.boton:hover {
+  background-position: right center;
+  box-shadow: 0 0 50px rgba(47, 209, 232, 0.5);
+  transform: translateY(-3px);
+}
+
+/* - ir al juego - */
+.juego {
+    color: white;
+    padding: 80px 100px;
+}
+
+.texto-juego {
+  position: relative;
+  z-index: 2;
+  text-align: right;
+}
+
+.texto-juego h2 {
+  color: #ff6600;
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+
+.texto-juego p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+
+/* - contactarse o ser parte de la com - */
+.contacto {
+padding: 80px 100px;
+text-align: center;
+}
+
+
+.formulario {
+font-family: "raleway", sans-serif;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+gap: 20px;
+max-width: 800px;
+margin: 0 auto;
+}
+
+input, textarea {
+background: transparent;
+border: 1px solid #ff00f2;
+margin-bottom: 10px;
+border-radius: 10px;
+padding: 10px;
+color: rgb(255, 255, 255);
+width: 100%;
+}
+
+textarea {
+grid-column: span 2; 
+height: 100px;
+}
+
+/* - la cosa de abajo - */
+.footer {
+    background: url("https://lh3.googleusercontent.com/pw/AP1GczN4BnSmmE_tpP8W9TdHI2mFi1n6yp-tKI3pVbOnMh6k37XwgR_qf1XZ2WfT2WyctgmOlm2kgSBd2jNrmiFYHFJMEnS7W8iPtsa-PCpVcuMbd7YnaL2BHCUjrqaondnJYaPzzZS6dVk3NBnoX-nQzHK0=w1064-h599-s-no-gm?authuser=0") center/cover no-repeat;
+    text-align: center;
+    padding: 80px 200px;
+}
+
+.linksfalsos {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.footerfondo img {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+hr {
+  width: 100%;
+  margin: 40px auto;
+  border: none;
+  border-top: 2px solid white;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.redes img {
+    width: 50px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.redes img:hover {
+    transform: scale(1.1);
+}
+
+.copyright {
+  font-size: 14px;
+  color:#32fffa;
+}
+
+/* Respon*/
+@media (max-width: 1024px) {
+  .personaje {
+    padding: 40px 60px;
+  }
+
+  .galeria {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav a {
+    margin: 0 15px;
+  }
+
+  .personaje {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .img-personaje {
+    width: 60%;
+  }
+
+  .galeria {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contacto form {
+    grid-template-columns: 1fr;
+  }
+
+  textarea {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  .galeria {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+

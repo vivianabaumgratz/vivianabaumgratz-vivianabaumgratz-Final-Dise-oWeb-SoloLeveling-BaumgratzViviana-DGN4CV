@@ -1,0 +1,102 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url("https://lh3.googleusercontent.com/pw/AP1GczNbaAZhdjkfjxO_pnLEIP1cZBLI8NjTXSWXST-MHb8IYaWD5Z6Lc7gCGZ_HykkvpdIgMcCB5uI8LB2heJzcVA092jFYV2WHaQu2B4pqGh5Ng27NGpVbhTIfQIu2CRhuhibSe-K_s2RKW7goio31fwGK=w539-h944-s-no-gm?authuser=0") no-repeat center/cover;
+
+}
+/* - header - */
+header {
+background: linear-gradient(to right, #9EFCE2, #BBFCEA); 
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px 40px;
+}
+
+header img {
+width: 6rem; /* no estoy segura si la menra correcta es hacerlo con rem o hay otra opcion mas viable */
+}
+
+nav a {
+color: #c300ff;
+font-size: 1.5rem;
+font-family: "Bebas Neue"; /* ¿ponerlo asi no me traera problemas a futuro? */
+margin-left: 60px;
+text-decoration: none;
+transition: color 0.4s;
+}
+
+nav a:hover {
+color: #202020;
+}
+.contenedor {
+    width: 80%;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 40px 0;
+    color: black;
+}
+
+.titulo {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 4rem;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+    color: #ff7c2c;
+}
+
+.Titulo {
+    font-family: 'Bebas Neue', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    padding: 20px 40px;
+    margin-bottom: 22px;
+    width: 100%;
+    margin-left: calc( - 50vw);
+    box-sizing: border-box;
+}
+
+.caja {
+    padding: 20px 25px;
+    margin-bottom: 22px;
+    border-radius: 2px;
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+}
+.caja h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 32px;
+    margin: 0 0 10px;
+    
+}
+.caja p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    line-height: 1.45;
+    font-weight: 200;
+}
+.ejemplo {
+    font-weight: 800;
+}
+
+.rango-e { background: #F786BB; }
+.rango-d { background: #BB5EC6; }
+.rango-c { background: #8C5BC7; }
+.rango-b { background: #817BD9; }
+.rango-a { background: #85B3F3; }
+.rango-s { background: #93E5F0; }
+
+
+.-e { background: #F4539E; }
+.-d { background: #9F1AAE; }
+.-c { background: #5B16AF; }
+.-b { background: #4B43CA; }
+.-a { background: #5193EE; }
+.-s { background: #65DBEA; }
+
+.personajeimg img {
+width: 50%;
+display: block;
+margin: 0 auto 20px;
+}

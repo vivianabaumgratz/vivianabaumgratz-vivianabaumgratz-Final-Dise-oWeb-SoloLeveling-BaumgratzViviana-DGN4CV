@@ -1,0 +1,108 @@
+/*historia*/
+
+.historia {
+    background: url("https://lh3.googleusercontent.com/pw/AP1GczPf6uCzhqzZFgkBg2ReD5XsVYEAFMcdpcANC4KGjdXPZpmiQ_k8JHNoAo5z9GUgAdfQ9BHb96SQtuqGvLQWgVZ-PkL9OVdx5BGPDu4pi_qV64GT7dw7D476Dg7jcAQsWPXezZMTWnUUBex4qJZptvbr=w1064-h270-s-no-gm?authuser=0") no-repeat right center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 80px 200px;
+    color: #33072a;
+}
+
+.historia .contenido {
+    max-width: 600px;
+}
+
+.historia h2 {
+    font-size: 4rem;
+    font-weight: 900;
+    color: #00fff2;
+    margin-bottom: 20px;
+    line-height: 1.1;
+}
+
+.historia p {
+    font-family: raleway, sans-serif;
+    font-weight: bold;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #ffffff;
+}
+
+@media (max-width: 900px) {
+    .historia {
+        padding: 60px 40px;
+        background-position: center;
+    }
+
+    .historia h2 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .historia {
+        padding: 40px 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .historia h2 {
+        font-size: 2.5rem;
+    }
+}
+
+
+.galeria {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  position: relative;
+  padding: 40px;
+}
+
+.foto {
+    position: relative;
+    width: 300px;
+    overflow: visible;
+    transition: transform 0.3s ease;
+}
+
+.foto img {
+    width: 100%;
+    border-radius: 15px;
+    display: block;
+    cursor: pointer;
+}
+
+.descripcion {
+    position: relative;
+    top: 100%;
+    left: 0%;
+    width: 100%;
+    background-color: #ffffff;
+    color: #000000;
+    overflow: hidden;
+    max-height: 0; 
+    transition: max-height 0.4s ease;
+    padding: 0 15px; 
+}
+
+.descripcion p {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.foto:hover .descripcion {
+    max-height: 100%;
+    padding: 10px 15px;
+}
+
+.galeria div:hover {
+  transform: translateY(8px);
+  box-shadow: none;
+}
+
+
+
