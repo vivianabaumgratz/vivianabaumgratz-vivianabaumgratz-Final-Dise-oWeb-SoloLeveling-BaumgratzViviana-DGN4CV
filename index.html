@@ -81,11 +81,21 @@
 </a>
 </section>
 
-<section class="contacto">
-<form action="Extra/FormularioEnviado.html" method="get">
-<button type="submit">Enviar</button>
-</form>
+<section class="contacto" id="contacto">
+  <h2>¿Quieres ser parte de la comunidad?</h2>
+
+  <form action="Extra/FormularioEnviado.html" method="get">
+    <input type="text" name="apellido" placeholder="Apellido" required>
+    <input type="text" name="nombres" placeholder="Nombres" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <input type="tel" name="telefono" placeholder="Número de teléfono" required>
+    <input type="text" name="genero" placeholder="Género" required>
+    <textarea name="comentario" placeholder="Deja tu comentario" required></textarea>
+
+    <button type="submit">Enviar</button>
+  </form>
 </section>
+
 
  <footer class="footer">
       <div class="footercontenedor">
@@ -141,6 +151,7 @@
 
 </body>
 </html>
+
 
 
 
