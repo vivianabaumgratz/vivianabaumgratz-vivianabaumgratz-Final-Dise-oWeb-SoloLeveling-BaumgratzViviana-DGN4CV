@@ -228,6 +228,30 @@ button:hover {
   z-index: 2;
 }
 
+@media (max-width: 768px) 
+    {
+
+  .youtube-section {
+    padding: 40px 20px; 
+    min-height: auto;
+    justify-content: center;
+  }
+
+  .playlist iframe {
+    width: 100%;      /* ocupa todo el ancho */
+    height: auto;
+    aspect-ratio: 16 / 9; /* mantiene proporción */
+  }
+
+  /* fondo video más estable en mobile */
+  .video-background iframe {
+    width: 177.77vh; /* evita cortes raros */
+    height: 100vh;
+  }
+
+}
+
+    
 /* Rangos*/
 .rangoscazadores {
   background: url("https://lh3.googleusercontent.com/pw/AP1GczOdvxn1xxMUXug-QWsNGXXSKsaPaSfpbNCiTawNgJKo2obsJ_4vfDLk7AI9dVmPKXItdaM6Qe65BBlgD__2X7DaDXGcxHy3rUNnd0iJt9GwAlrshQhtpCwcDcLYmqp4ws7Y2SZvBGoyKDItGXMioi1i=w1064-h213-s-no-gm?authuser=0") no-repeat right center;
