@@ -171,7 +171,25 @@ button:hover {
   height: 100%;
   display: block;
 }
+@media (max-width: 768px) {
 
+  .personajes {
+    padding: 30px 20px; 
+    text-align: center;
+  }
+
+  .personajes h2 {
+    font-size: 1.8rem;
+  }
+
+  .personajes p {
+    font-size: 0.95rem;
+  }
+
+  .galeria {
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    gap: 15px;
+  }
 
 /* sección principal */
 .youtube-section {
